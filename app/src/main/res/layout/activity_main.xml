@@ -5,53 +5,74 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#E86451">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notes"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:adjustViewBounds="true"
-            android:id="@+id/iv_image"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_2" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_weight="1"
         android:orientation="horizontal"
         android:layout_height="match_parent">
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Custom dialog"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:id="@+id/b_CustomDialog"
-            android:textColor="@color/white"
-            android:layout_marginHorizontal="5dp"
-            android:layout_height="56dp"/>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab_add"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        app:backgroundTint="#EDD707"/>
+</FrameLayout>
+
+<!--        <Button-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Custom dialog"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:id="@+id/b_CustomDialog"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:layout_height="56dp"/>-->
 
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textColor="@color/white"
-            android:id="@+id/b_SimpleDialog"
-            android:text="Simple dialog"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginHorizontal="5dp"
-            android:layout_height="56dp"/>
 
     </LinearLayout>
 

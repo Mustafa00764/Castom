@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.Anim2" parent="Base.Theme.Anim2" />
+    <style name="circle">
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

@@ -14,83 +14,64 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_weight="1.1">
+            android:layout_weight="1.5">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:gravity="center_vertical"
+                android:padding="5dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1.5">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Set value"
+                    android:text="New Note"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"/>
 
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                 android:gravity="center_vertical|end"
-                android:layout_weight="2">
-                <ImageView
-                    android:id="@+id/iv_cansel"
-                    android:layout_width="30dp"
-                    android:src="@drawable/ic_cancel"
-                    android:layout_gravity="center"
-                    android:layout_height="30dp"/>
-
-            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
+            android:gravity="start"
             android:layout_weight="1">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:background="@drawable/bbb"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="20dp"
-                    android:src="@drawable/img_1"
-                    android:layout_marginStart="15dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_height="20dp"/>
                 <EditText
                     android:id="@+id/et_enter"
-                    android:layout_width="150dp"
-                    android:background="@drawable/lll"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
                     android:layout_marginStart="10dp"
-                    android:layout_height="40dp"
-                    android:hint="Enter value"/>
+                    android:gravity="start"
+                    android:layout_height="match_parent"
+                    android:hint="Enter your note!"/>
 
-
-
-            </LinearLayout>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_weight="1">
-            <Button
-                android:layout_width="150dp"
-                android:text="Done"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:id="@+id/b_done"
-                android:textColor="@color/white"
-                android:layout_marginHorizontal="5dp"
-                android:layout_height="56dp"/>
+            android:gravity="end|center"
+            android:orientation="horizontal"
+            android:layout_weight="1.5">
 
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="#2196F3"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#2196F3"
+                android:textSize="15sp" />
         </LinearLayout>
 
     </LinearLayout>
